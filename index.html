@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>falak's portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+
+    <script src="https://kit.fontawesome.com/475615ca20.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <span class="logo"></span>
+            <ul id="sidemenu">
+                <li><a href="#header" style="--navAni:1">Home</a></li>
+                <li><a href="#about"  style="--navAni:2">About</a></li>
+                <li><a href="#services"  style="--navAni:3">Services</a></li>
+                <li><a href="#portfolio"  style="--navAni:4">Portfolio</a></li>
+                <li><a href="#contact"  style="--navAni:5">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <section class="home" id="home">
+            <div class="main">
+                <div class="detail"><!---Sarah -->
+                    <h1><span>Hi, It's Me </span><br> I'm <span class="name">Falak Ahuja</span></h1>
+                    <p>Crafting digital experiences with passion and precision, one line of code<br> at a time.</p>
+                    <div class="social-profile">
+                        <a class="icona" href="https://www.linkedin.com/in/falak-ahuja-19537b278/"></a>
+                        <a class="iconb" href="https://www.instagram.com/falakahuja/"></a>
+                        <a class="iconc" href="https://github.com/falakahuja"></a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="resume_picture.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title" id="sub-title">About Me</h1>
+                <div id="info">
+                <p>Driven by a passion for creating captivating digital experiences, I'm a dedicated front-end developer renowned for blending creativity with technical finesse. Specializing in user-centric design and innovation, I excel in transforming concepts into immersive online solutions. Let's collaborate to elevate your digital presence together.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2026 (expected)</span><br>VIT University, Vellore</li>
+                        <li><span>2022</span><br>12th (PCM) from MDPS</li>
+                        <li><span>2020</span><br>10th from MDPS</li>
+                    </ul>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Java, C/C++, Python</li>
+                        <li><span>Web Development</span><br>Frontend Development</li>
+                        <li><span>Other Skills</span><br>Team management, Communication Skills, Leadership</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Core Committee Member at Fepsi</li>
+                        <li><span>2024 </span><br>Volunteered for Riviera'24</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title" id="sub-title-service">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p> From wireframing to prototyping, I focus on crafting seamless user experiences that drive engagement and satisfaction. Let's work together to design an interface that not only meets but exceeds user expectations, enhancing your digital footprint.</p>
+
+            </div>
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>Problem-Solving</h2>
+                <p>Whether you're facing complex technical challenges or seeking innovative solutions to propel your projects forward, my problem-solving skills are at your service. I excel in analyzing problems, devising efficient strategies, and implementing robust solutions that exceed expectations.</p>
+
+            </div>
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Dev</h2>
+                <p>From crafting responsive and visually stunning websites to optimizing user experience and functionality, I am committed to delivering high-quality solutions that elevate your online presence. Let's collaborate to bring your vision to life in the digital realm.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title" id="sub-title-portfolio">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Screenshot 2024-05-03 200806.png">
+                <div class="layer">
+                    <h3>Food delivery App</h3>
+                    <p>The website was build using HTML,</p><p> CSS, JS and React</p>
+                    <a href="https://food-del-blue.vercel.app/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div> 
+            <div class="work">
+                <img src="Screenshot 2024-05-03 201020.png" >
+                <div class="layer">
+                    <h3>Amazon Clone Website</h3>
+                    <p>The website was build using </p><p> HTML and CSS</p>
+                    <a href="https://falakahuja.github.io/amazon-clone/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> falakahuja0101@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 8076839785</p>
+                <div class="social-icons">
+                <!--    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a> -->
+                    <a href="https://www.linkedin.com/in/falak-ahuja-19537b278/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/falakahuja"><i class="fab fa-github"></i></a>
+                </div>
+                
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="index.js"></script>
+
+</body>
+</html>
